@@ -67,11 +67,16 @@ const Account = () => {
 
   const FeeAlert = () => {
       console.log(`Fees updating`);
-      return (
-          <div className="alert alert-danger" role="alert">
-              You have attempted or considered {invalidTransactions} invalid transaction(s). Your account will be charged ${fees}.
-          </div>
-      );
+      if (fees > 0) {
+          return (
+              <div className="alert alert-danger" role="alert">
+                  You have attempted or considered {invalidTransactions} invalid transaction(s). Your account will be charged ${fees}.
+              </div>
+          );
+      }
+      else {
+          return <div/>
+      }
   };
 
   return (
@@ -92,9 +97,7 @@ const Account = () => {
                                    isValid={validTransaction}></ATMDeposit>
         }
 
-        {
-            (fees>0) && <FeeAlert></FeeAlert>
-        }
+        <FeeAlert></FeeAlert>
 
     </form>
   );
