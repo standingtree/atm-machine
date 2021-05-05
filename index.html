@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script
+      src="https://unpkg.com/@babel/standalone/babel.min.js"
+      crossorigin
+    ></script>
+
+    <title>Welcome to EveryBarATM!</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark bg-primary">
+      Welcome to EveryBarATM!
+    </nav>
+    <p>Your Convenient ATM Available At Every Bar in Town!</p>
+    <div class="container">
+      <div class="row">
+        <!-- React component inside this div. -->
+<!--        <div class="col"></div>-->
+        <div id="root" class="col-lg-10"></div>
+<!--        <div class="col"></div>-->
+      </div>
+    </div>
+
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+
+    <!-- Load our React component. -->
+    <script type="text/jsx" src="atm-machine.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+button {
+    background-color: #0c80f3;
+    border: 6px solid #0ff166;
+    border-radius: 10px;
+    width: 150px;
+}
+
+select {
+    margin: auto auto 100px auto;
+}
+
+.navbar {
+    color: azure;
+    font-size: 25px;
+    align-content: center;
+}
+
+p {
+    margin: auto;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+}
+div {
+    margin: auto;
+    text-align: center;
+}
+
