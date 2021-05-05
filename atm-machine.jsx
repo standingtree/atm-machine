@@ -94,7 +94,6 @@ const Account = () => {
 
         {
             (fees>0) && <FeeAlert></FeeAlert>
-            (fees>0) && <FeeAlert></FeeAlert>
         }
 
     </form>
